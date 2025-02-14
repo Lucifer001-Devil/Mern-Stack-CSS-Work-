@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>School Time Table</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    table {
+      width: 100%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    /* Table Heading */
+    .heading-cell {
+      border: 3px ridge #666;
+      background-color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    /* Class Name */
+    .class-cell {
+      border: 1px solid #000;
+      background-color: #fff;
+      padding: 2px 20px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.2;
+      height: 20px;
+    }
+
+    /* Bell Timings Box */
+    .bell-box {
+      border: 1px solid #000;
+      background-color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    /* Table Headers */
+    th {
+      border: 1px solid #000;
+      background-color: #f2f2f2;
+      padding: 8px;
+      text-align: center;
+    }
+
+    /* Table Cells */
+    td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: center;
+    }
+
+    /* Split Cell: Perfectly aligned with a joined line */
+    .split-cell {
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+      align-items: center;
+      font-weight: bold;
+      height: 60px;
+    }
+
+    /* Top section (Time) */
+    .split-cell .time-period {
+      border-bottom: 3px solid #000; /* Thick and bold line */
+      width: 100%;
+      text-align: center;
+      padding: 8px 0;
+      font-size: 14px;
+    }
+
+    /* Bottom section (Period Name) */
+    .split-cell .period-name {
+      text-align: center;
+      padding: 8px 0;
+      font-size: 14px;
+    }
+
+    /* Full Column for Breaks */
+    .break-column {
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      background-color: #FFE0B2;
+      color: #D32F2F;
+      border: 1px solid #000;
+    }
+
+  </style>
+</head>
+<body>
+  <table>
+    <!-- First Row: School Time Table Heading -->
+    <tr>
+      <td class="heading-cell" colspan="10">
+        School Time Table
+      </td>
+    </tr>
+    <!-- Second Row: Class Name -->
+    <tr>
+      <td class="class-cell" colspan="10">
+        Name of the Class: HTML Basics
+      </td>
+    </tr>
+    <!-- Third Row: Bell Timings -->
+    <tr>
+      <td class="bell-box" colspan="10">
+        9:00AM-FIRST BELL &nbsp;&nbsp;&nbsp; 9.05AM-SECOND BELL &nbsp;&nbsp;&nbsp; 9:15AM-THIRD BELL
+      </td>
+    </tr>
+    <!-- Fourth Row: Timetable Header -->
+    <tr>
+      <th>Days</th>
+      <th>
+        <div class="split-cell">
+          <div class="time-period">9:15-9:45</div>
+          <div class="period-name">I PERIOD</div>
+
+        </div>
+      </th>
+      <th>
+        <div class="split-cell">
+          <div class="time-period">9:45-10:30</div>
+          <div class="period-name">II PERIOD</div>
+        </div>
+      </th>
+      <!-- First Break Column -->
+      <th rowspan="6" class="break-column">10-min BREAK <br> (10:30-10:40)</th>
+      <th>
+        <div class="split-cell">
+          <div class="time-period">10:40-11:25</div>
+          <div class="period-name">III PERIOD</div>
+        </div>
+      </th>
+      <th>
+        <div class="split-cell">
+          <div class="time-period">11:25-12:10</div>
+          <div class="period-name">IV PERIOD</div>
+        </div>
+      </th>
+      <!-- Lunch Break Column -->
+      <th rowspan="6" class="break-column">LUNCH BREAK <br> (12:10-1:00)</th>
+      <th>
+        <div class="split-cell">
+          <div class="time-period">1:00-1:45</div>
+          <div class="period-name">V PERIOD</div>
+        </div>
+      </th>
+      <th>
+        <div class="split-cell">
+          <div class="time-period">1:45-2:30</div>
+          <div class="period-name">VI PERIOD</div>
+        </div>
+      </th>
+      <!-- Second Break Column -->
+      <th rowspan="6" class="break-column">10-min BREAK <br> (2:30-2:40)</th>
+      <th>
+        <div class="split-cell">
+          <div class="time-period">2:40-3:25</div>
+          <div class="period-name">VII PERIOD</div>
+        </div>
+      </th>
+      <th>
+        <div class="split-cell">
+          <div class="time-period">3:25-4:10</div>
+          <div class="period-name">VIII PERIOD</div>
+        </div>
+      </th>
+    </tr>
+    <!-- Timetable Data Rows -->
+    <tr>
+      <td>Monday</td>
+      <td>English</td>
+      <td>Math</td>
+      <td>Science</td>
+      <td>PT</td>
+      <td>History</td>
+      <td>Music</td>
+      <td>Art</td>
+      <td>P.T</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td>English</td>
+      <td>Math</td>
+      <td>Science</td>
+      <td>PT</td>
+      <td>Geography</td>
+      <td>Drama</td>
+      <td>Sports</td>
+      <td>P.T</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td>History</td>
+      <td>Geography</td>
+      <td>Physics</td>
+      <td>Chemistry</td>
+      <td>Computer</td>
+      <td>Math</td>
+      <td>English</td>
+      <td>P.T</td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td>Biology</td>
+      <td>English</td>
+      <td>Math</td>
+      <td>Sports</td>
+      <td>Science</td>
+      <td>Physics</td>
+      <td>Chemistry</td>
+      <td>P.T</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>Computer</td>
+      <td>Art</td>
+      <td>Music</td>
+      <td>Drama</td>
+      <td>Biology</td>
+      <td>English</td>
+      <td>History</td>
+      <td>P.T</td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <Style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #52c2df, #a838e8);
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+        }
+        h2 {
+            text-align: center;
+            color: #6c5ce7;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .row input {
+            width: 48%;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: linear-gradient(to right, #52c2df, #a838e8);
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </Style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact US <span style="color: #a838e8;">Form</span></h2>
+        <form>
+            <div class="row">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+            <div class="row">
+                <input type="email" placeholder="Email Address" required>
+                <input type="text" placeholder="Website Name" required>
+            </div>
+            <textarea rows="4" placeholder="Write Your Message" required></textarea>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>

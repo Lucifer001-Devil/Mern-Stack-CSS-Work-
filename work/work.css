@@ -1,0 +1,26 @@
+/*body{
+    background-color: aqua;
+    opacity: 1;
+    /* -Color name
+       -hex values(#ff0000)
+       -RGB values(rgb(255,0,0))
+
+}
+       */
+/*
+.opacity {
+    background-color: blue;
+    opacity: 1;
+    
+}
+*/
+
+/* Images */
+
+body{
+    background-image: url(Entertainment-removebg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: middle;
+    background-attachment: scroll;
+}

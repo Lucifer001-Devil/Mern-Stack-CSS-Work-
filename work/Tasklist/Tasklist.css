@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #222;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.list-item:hover {
+    background: #bbb;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.number {
+    background: #58b2f5;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Number hover effect */
+.list-item:hover .number {
+    background: #3a92d3;
+}
+
+.text {
+    font-size: 16px;
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Text hover effect */
+.list-item:hover .text {
+    color: #222;
+}
+
+.sub-item {
+    margin-left: 40px;
+    width: 260px;
+}

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b36f6f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    width: 300px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.list-item:hover {
+    background: #bbb;
+    cursor: pointer;
+}
+
+/* Red number box */
+.number {
+    background: #e74c3c;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Arrow effect on hover */
+.list-item:hover .number {
+    background: #c0392b;
+    position: relative;
+}
+
+.list-item:hover .number::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 10px solid #c0392b;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+
+/* Text */
+.text {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Sub-item indentation */
+.sub-item {
+    margin-left: 40px;
+    width: 260px;
+}

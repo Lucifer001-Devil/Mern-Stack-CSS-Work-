@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.table-container {
+    width: 80%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Header Background */
+th {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Row Hover Effect */
+tbody tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Cell Hover Effect */
+td:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+}
+
+/* Column Hover Effect */
+td:hover, td:hover ~ td {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Specific Column Hover Effect */
+table td:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+table td:hover:nth-child(1), table th:nth-child(1):hover {
+    background: rgba(255, 200, 200, 0.3);
+}
+
+table td:hover:nth-child(2), table th:nth-child(2):hover {
+    background: rgba(200, 255, 200, 0.3);
+}
+
+table td:hover:nth-child(3), table th:nth-child(3):hover {
+    background: rgba(200, 200, 255, 0.3);
+}
+
+table td:hover:nth-child(4), table th:nth-child(4):hover {
+    background: rgba(255, 255, 200, 0.3);
+}
+
+table td:hover:nth-child(5), table th:nth-child(5):hover {
+    background: rgba(200, 255, 255, 0.3);
+}

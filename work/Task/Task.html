@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Task.css">
+        
+</head>
+<body>
+    <div class="container">
+        <div class="link-box error">✖ This is a link without a link</div>
+        <div class="link-box error">✖ This is a link without a link with target blank</div>
+        <a href="#" class="link-box safe">✔ This is a link with a link with target blank and noopener</a>
+        <a href="#" class="link-box safe">✔ This is a default link</a>
+        <a href="#" class="link-box warning">✔ This is an internal link</a>
+        <a href="https://example.com" class="link-box info">✔ This is external</a>
+        <a href="https://example.com" target="_blank" class="link-box danger">✖ External link without noopener with target blank.</a>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="link-box success">✔ External in new window like it should be</a>
+    </div>
+</body>
+</html>

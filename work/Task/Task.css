@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+}
+
+.link-box {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border: 2px solid transparent;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.error { background-color: #ffdddd; border-color: red; }
+.safe { background-color: #ccffff; border-color: cyan; }
+.warning { background-color: #ffffcc; border-color: gold; }
+.info { background-color: #ccccff; border-color: blue; }
+.danger { background-color: #ffcc99; border-color: orange; }
+.success { background-color: #ffccff; border-color: pink; }

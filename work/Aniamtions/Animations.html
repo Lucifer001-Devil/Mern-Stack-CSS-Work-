@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 8s;
+            animation-delay: 5s;
+           /* animation-iteration-count: 2;*/
+ /*          animation-iteration-count: infinite; */
+            animation-iteration-count: 3;
+           animation-direction: alternate;
+
+           animation-timing-function: ease-in-out;
+           
+           /*Shorthand
+           
+           animation: example 8s linear 2s infiniter reverse*/
+        }
+        @keyframes example {
+    0% {
+        background-color: red;
+        top: 0;
+        left: 0;
+    }
+    25% {
+        background-color: yellow;
+        top: 0;
+        left: 250px; /* Added px */
+    }
+    50% {
+        background-color: green;
+        top: 250px; /* Added px */
+        left: 250px; /* Added px */
+    }
+    75% {
+        background-color: blue;
+        top: 250px; /* Added px */
+        left: 0px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1>Css Animations</h1>
+    <div>
+
+    </div>
+</body>
+</html>

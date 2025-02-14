@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        /*p{
+            display: none;
+            background-color: aqua;
+            padding: 20px;
+        }
+
+        div:hover p{
+            display:block;
+        }*/
+
+        p::first-line{
+            color:aliceblue;
+            font-variant: small-caps;
+        }
+        p::first-letter{
+            color: black;
+            font-size: xx-large;
+        }
+        p{
+            background-color: crimson;
+
+        }
+        /*h1::before{
+            content: url(Entertainment-removebg.png);
+        }*/
+
+        ::marker{
+            color: crimson;
+            font-size: 23px;
+        }
+        ::selection{
+            color: red;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+<!---    
+    Pseudo Classes
+
+selector:pseudo-class{
+        property:value;
+
+
+        Pseudo elements
+
+    selector::pseudo-element{
+        property: value;
+    }
+    } -->
+
+   <!-- <div>
+        Hover over me !!!!!
+
+        <p>I'm Hidden</p>
+    </div>
+-->
+    <h1>pseudo-element</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid maxime quis incidunt dicta nulla, esse ipsa. Accusamus, quod? Pariatur deleniti saepe sunt iusto assumenda, voluptates ab velit similique dicta odit!</p>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    
+</body>
+</html>
